@@ -16,10 +16,10 @@ public class GreedyAlg {
 class MaxActivities {
 	public static void main(String[] args) {
 		int[][] activities = {
-			{1, 3},
-			{2, 5},
 			{4, 6},
 			{5, 7},
+			{1, 3},
+			{2, 5},
 			{3, 9},
 			{8, 10}
 		};
@@ -81,6 +81,13 @@ class Edge {
 		this.v = v;
 		this.weight = weight;
 	}
+
+	@Override
+	public String toString() {
+		return "Edge [u=" + u + ", v=" + v + ", weight=" + weight + "]";
+	}
+
+	
 }
 
 class UnionFind {
